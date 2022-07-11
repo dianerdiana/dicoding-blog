@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/close.png" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <title>Dian Erdiana</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <nav class="navbar">
+          <a href="#" class="navbar-brand">Dian Erdiana</a>
+          <button class="btn btn-toggler" onclick="openSidenav()">
+            <img src="./assets/images/list.png" alt="list" />
+          </button>
+          <ul class="navbar-desktop">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn drpbtn">
+                Service
+                <img src="./assets/images/arrow.png" />
+              </button>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Web Design</a>
+                <a href="#" class="dropdown-item">Mobile Design</a>
+              </div>
+            </li>
+          </ul>
+          <div class="btn-contact-desktop">
+            <button class="btn btn-contact">Contact</button>
+          </div>
+        </nav>
+
+        <!-- Sidebar -->
+        <div id="sidenav" class="navbar-side">
+          <button class="btn btn-close" onclick="closeSidenav()">
+            <img src="./assets/images/close.png" alt="close" />
+          </button>
+          <ul class="navbar-mobile">
+            <li class="nav-item active">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="nav-link btn drpbtn">
+                Service
+                <img src="./assets/images/arrow.png" />
+              </button>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Web Design</a>
+                <a href="#" class="dropdown-item">Mobile App Design</a>
+              </div>
+            </li>
+          </ul>
+          <div class="btn-contact-mobile">
+            <button class="btn btn-contact">Contact</button>
+          </div>
+        </div>
+
+        <div class="img-wrapper">
+          <img
+            src="./assets/images/welcome.svg"
+            alt="welcome"
+            class="img-welcome"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <section id="articles"></section>
+          <aside>
+            <div class="profile card">
+              <img src="./assets/images/me.jpeg" alt="me" />
+              <div class="description">
+                <h2>Dian Erdiana</h2>
+                <p>Fullstack Developer</p>
+                <h4>Skills</h4>
+                <ol>
+                  <li>HTML & CSS</li>
+                  <li>Javascript</li>
+                  <li>React</li>
+                  <li>Node Js</li>
+                  <li>Express Js</li>
+                  <li>MySQL</li>
+                </ol>
+                <p><strong>Email</strong>: <br />dianerdiana.de@gmail.com</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Portofolio &#169; 2022, Dian Erdiana</p>
+    </footer>
+
+    <script src="./assets/script/script.js"></script>
+  </body>
+</html>
